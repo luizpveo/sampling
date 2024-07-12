@@ -17,7 +17,7 @@ ATTACK_RATE = 0.10
 TRACE_SUCCESS = 0.20
 SECONDARY_TRACE_THRESHOLD = 2
 
-def simulate_event(m):
+def simulate_event(m,random_state):
   """
   Simulates the infection and tracing process for a series of events.
   
@@ -44,11 +44,11 @@ def simulate_event(m):
   ppl['traced'] = ppl['traced'].astype(pd.BooleanDtype())
 
   # Infect a random subset of people
-  infected_indices = np.random.choice(ppl.index, size=int(len(ppl) * ATTACK_RATE), replace=False)
+  infected_indices = random_state.choice(ppl.index, size=int(len(ppl) * ATTACK_RATE), replace=False)
   ppl.loc[infected_indices, 'infected'] = True
 
   # Primary contact tracing: randomly decide which infected people get traced
-  ppl.loc[ppl['infected'], 'traced'] = np.random.rand(sum(ppl['infected'])) < TRACE_SUCCESS
+  ppl.loc[ppl['infected'], 'traced'] = random_state.rand(sum(ppl['infected'])) < TRACE_SUCCESS
 
   # Secondary contact tracing based on event attendance
   event_trace_counts = ppl[ppl['traced'] == True]['event'].value_counts()
@@ -68,10 +68,11 @@ def simulate_event(m):
   return p_wedding_infections, p_wedding_traces
 
 # Set the random seed for reproducibility
-np.random.seed(10)
+seed = 10
+np_random_state = np.random.RandomState(seed)
 
 # Run the simulation 1000 times
-results = [simulate_event(m) for m in range(1000)]
+results = [simulate_event(m,np_random_state) for m in range(1000)]
 props_df = pd.DataFrame(results, columns=["Infections", "Traces"])
 
 # Plotting the results

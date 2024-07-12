@@ -10,10 +10,43 @@ Modify the number of repetitions in the simulation to 1000 (from the original 50
 
 Alter the code so that it is reproducible. Describe the changes you made to the code and how they affected the reproducibility of the script file. The output does not need to match Whitby’s original blogpost/graphs, it just needs to produce the same output when run multiple times
 
-# Author: YOUR NAME
-
+# Author: Luiz Oliveira
 ```
 Please write your explanation here...
+
+Question 1:  
+Identify all stages at which sampling is occurring in the model. Describe in words the sampling procedure, referencing the functions used, sample size, sampling frame, any underlying distributions involved, and how these relate to the procedure outlined in the blog post.
+
+Stage 1 - Infect a random subset of people: 
+Procedure: Selects a group of individuals to be infected (based on the ATTACK_RATE = 0.10).
+Function used: np.random.choice
+Sample Size: Determined by int(len(ppl) * ATTACK_RATE), which calculates the number of people to infect based on the attack rate. (10% of the total population) 
+Sampling Frame: The entire population attending events (ppl.index), which includes both wedding and brunch attendees.
+
+Stage 2 - Primary Tracing Sampling:
+Function used: np.random.rand in combination with a comparison operation (< TRACE_SUCCESS).
+Sample Size: The number of infected person (sum(ppl['infected']))
+Sampling Frame: Infected individuals.
+
+Stage 3 - Secondary Tracing Determination: 
+Procedure: This step is conditional on the counts of traced individuals at each event.
+Function Used: ppl.loc[ppl['event'].isin(events_traced) & ppl['infected'], 'traced'] = True
+Sample Size: It’s dependent on the number of events meeting the secondary trace threshold.
+Sampling Frame: : Events with traced cases.
+
+Question 2:
+Does this code appear to reproduce the graphs from the original blog post?
+No, the graph looks different from the original blog post.
+
+Question 3:
+Comment on the reproducibility of the results.
+Without a seed or similar setting, the output graphs will vary each time the script is run due to the lack of reproducibility.
+
+Question 4:
+Describe the changes you made to the code and how they affected the reproducibility of the script file.
+I added the Random State Object as a parameter in the simulate_event function to control randomness and created a np.random.RandomState object with the seed 10 to ensure all random operations use the same seed.
+These adjustments ensure that the results are consistent across different runs of the script, enhancing reproducibility.
+
 
 ```
 
