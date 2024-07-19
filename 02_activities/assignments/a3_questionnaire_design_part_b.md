@@ -5,18 +5,52 @@
 
     ```
     write your answer here...
+    
+	It depends, the way we choose our sample affects how well it represents all our employees.For example, randomly picking samples makes sure everyone has a fair chance to be included, giving us a better picture of what employees think. But if we only ask volunteers or easily accessible employees, we might miss hearing from those who are harder to reach 	or have different views. How we pick our sample really matters in understanding turnover and employee happiness in the company.    
+
     ```
 
-2. Given the class content (error, survey quality, ethics) covered since Part A of the assignment, do you wish to make any changes to your original survey? If so, make a copy of your original survey and make any desired changes. Describe the changes and your reasoning. Provide a link here for submission.
-
-    ```
-    write your answer here...
-    ```
-
-3. Could the purpose of your survey have been fulfilled through an observational study? If yes, how? If no, why not?
+3. Given the class content (error, survey quality, ethics) covered since Part A of the assignment, do you wish to make any changes to your original survey? If so, make a copy of your original survey and make any desired changes. Describe the changes and your reasoning. Provide a link here for submission.
 
     ```
     write your answer here...
+
+   	1) I would include am ethic statement at he beginning of the survey to infor the porpuse and how the data will be used.
+	2) I would remove open-endend questions
+
+ 	New Survey:
+
+    	Dear participant, your feedback in this survey is essential for understanding job satisfaction and turnover factors. All responses are confidential and will only be used for research purposes to improve our organization.
+    
+	1. On a scale of 1 to 10, how satisfied were/are you with your job overall? (for former and currently employees) 
+	2. What were the primary reasons for your departure? (for former employees) 
+	Option A) Salary
+    	Option B) Work life balance
+    	Option C) Benefits
+    	Option D) Work Career
+    	Option E) Work environment
+    	Option F) Other --> If this option is selected, It will show a space to write it.
+	
+	3. How would you rate the company culture and work environment? (for former and currently employees) 
+	(Scale 1 to 5) --> I would ask "Why" if the participant chose 1 or 2 
+	
+	4. How would you rate the company’s onboarding process? (for former and currently employees) 
+	(Scale 1 to 5) --> I would ask "Why" if the participant chose 1 or 2 
+	
+	5. How would you rate the level of support and communication you receive from your immediate supervisor or team leader?(for former and currently employees) 
+	(Scale 1 to 5) --> I would ask "Why" if the participant chose 1 or 2 
+	
+	6. How likely are you to recommend our company as a good place to work to friends or family? (for former and currently employees)
+	(Scale 1 to 10) --> I would ask "Why" if the participant chose less than 5
+	
+    ```
+
+4. Could the purpose of your survey have been fulfilled through an observational study? If yes, how? If no, why not?
+
+    ```
+    write your answer here...
+   No, the purpose of the survey would not be potentially  achieved through an observational study by observing behaviors, interactions, and environmental factors impacting employee satisfaction and turnover. The reason is that relying solely on observation might not capture employees' subjective opinions and detailed feedback about the company, which are essential for understanding their perspectives and motivations accurately. Therefore, while observational studies can provide valuable insights, they may not fully substitute for surveys in gathering comprehensive employee feedback.
+    
     ```
 
 ## Why am I doing this assignment?
