@@ -19,7 +19,7 @@ Sources: - Canadian General Social Survey on Giving, Volunteering, and Participa
 | Sources of error                                      | Non-response                                                                | Non-response                                               | Not applicable                                                                              |
 | Limitations, known biases                             | Non-response bias                                                           | Non-response bias                                          | Sample size                                                                                 |
 | Citation                                              | Statistics Canada                                                           | Stephenson, Laura B, A.Harell, D.Rubenson and P.J.Loewen.  | Elizabeth Clare et al                                                                       |
-| Links to any documentation or additional sources used | https://www150.statcan.gc.ca/n1/pub/45-25-0001/cat5/c33_2018.zip            | https://www150.statcan.gc.ca/n1/pub/45-25-0001/cat5/c33_2018.zip)              | Dryad repository                                                                            |
+| Links to any documentation or additional sources used | https://www150.statcan.gc.ca/n1/pub/45-25-0001/cat5/c33_2018.zip            | https://www150.statcan.gc.ca/n1/pub/45-25-0001/cat5/c33_2018.zip  | https://datadryad.org/stash/dataset/doi:10.5061/dryad.n7j27                                                                         |
 
 ## Criteria
 
